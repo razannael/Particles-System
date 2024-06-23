@@ -9,6 +9,8 @@ body
 {
     height: 100vh;
     font-family: 'Poppins';
+    color: #ffffff;
+    
 }
 
 .webgl
@@ -18,3 +20,52 @@ body
     left: 0;
     outline: none;
 }
+.container
+{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.content
+{
+    display: flex;
+    gap: 3em;
+    width: 60%;
+    position: relative;
+    padding-top: 1em;
+}
+.content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #ffffff;
+    opacity: 0.5;
+    transform: scaleX(1);
+  }
+
+  h1{
+    font-size: 5em;
+    width: 30vw;
+    line-height: 97%;
+    text-align: right;
+  }
+
+  p{
+    font-size: 1.3em;
+    width: 40vw;
+    line-height: 170%;
+  }
+
+  h1, p{
+    flex-basis: 0;
+    flex-grow: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }

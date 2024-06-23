@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "dat.gui": "^0.7.9",
-    "three": "^0.165.0"
+    "gsap": "^3.12.5",
+    "three": "^0.165.0",
+    "three-css3drenderer": "^1.0.1"
   }
 }
